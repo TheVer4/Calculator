@@ -177,7 +177,7 @@ public class Window extends JFrame {
 					double cache = division(first, second);
 					if (cache != 0) end = cache;
 					else clear();
-					buffer = "Division by zero!";
+					JOptionPane.showMessageDialog(null, "Division by zero!", "Error!", JOptionPane.OK_OPTION);
 					break;
 				case MULTIPLICATION:
 					end = multiplication(first, second);
